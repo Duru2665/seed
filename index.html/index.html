@@ -4,39 +4,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="Main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-
+    <link rel="icon" type="image/jpeg" href="Images/nav-backgrond.jpeg">
 </head>
 <body>
     <nav>
-        <div class="navbar">
-            <h2>lopstudios</h2>
-            <div class="navbars">
-                <ul>
-                    <li>About</li>
-                    <li>Careers</li>
-                    <li>Events</li>
-                    <li>Products</li>
-                    <li>Support</li>
-                </ul>
-            </div>
+        <div class="net">
+            <div class="navbar">
+                <h2>lopstudios</h2>
+                <div class="navbars">
+                    <ul class="sidebar">
+<li onclick="hidesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 0 384 512" width="50px"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></a></li>
+                        <li>About</li>
+                        <li>Careers</li>
+                        <li>Events</li>
+                        <li>Products</li>
+                        <li>Support</li>
+                    </ul>
 
-            <div class="bars">
-                <a href="#"><i class="fa-solid fa-bars"></i></a>
+                    <ul>
+                        <li class="hideOnMobile">About</li>
+                        <li class="hideOnMobile">Careers</li>
+                        <li class="hideOnMobile">Events</li>
+                        <li class="hideOnMobile">Products</li>
+                        <li class="hideOnMobile">Support</li>
+                        <li onclick="showsidebar()" class="bars"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 0 448 512" width="26"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></a></li>
+                    </ul>
+                </div>
+    
+                <!-- <div class="bars">
+                    <a onclick="showsidebar()" href="">
+                </div> -->
             </div>
-        </div>
-
-        <div class="text">
-            <h2>
-                IMMERSIVE EXPERIENCES <br>THAT DELIVER
-            </h2>
+    
+            <div class="text">
+                <h2>
+                    IMMERSIVE EXPERIENCES THAT DELIVER
+                </h2>
+            </div>
         </div>
     </nav>
 
     <main>
        <div class="con">
+            <!-- <div class="hello">
+                <h2>Hello world</h2>
+            </div> -->
+
             <div class="images">
-                <img src="cat.jpg" alt="a cat">
+                <img src="images/cat.jpg" alt="a cat">
             </div>
 
             <div class="text-section">
@@ -44,10 +61,97 @@
                 <p>
                     Founded in 2011, Leadpstudios has been procuding world-class virtual reality projects for some of the best compaines around the globe. Our award-winnig creations have transformed businesses through digital experiences that bind to their brand.
                 </p>
-
-                <a href="#" class="button">See All</a>
             </div>
        </div>
+
+       <div class="creation">
+            <div class="creation1">
+                <h1>OUR CREATIONS</h1>
+            </div>
+
+            <div class="creation2">
+                <a href="#"><button><p>SEE ALL</p></button></a>
+            </div>
+       </div>
+
+       <div class="grid-images">
+            <div class="grids">
+                <img src="images/roll2.jpg" alt="">
+                <h2>DEEP <br>EARTH</h2>
+            </div>
+
+            <div class="grids">
+                <img src="images/roll3.jpg">
+                <h2>NIGHT <br>ARCADE</h2>
+            </div>
+
+            <div class="grids">
+                <img src="images/roll2.jpg" alt="">
+                <h2>SOCCER <br>TEAM VR</h2>
+            </div>
+
+            <div class="grids">
+                <img src="images/roll4.jpg" alt="">
+                <h2>THE <br>GRID</h2>
+            </div>
+
+            <div class="grids">
+                <img src="images/roll5.jpg" alt="">
+                <h2>FROM UP <br>ABOVE VR</h2>
+            </div>
+
+            <div class="grids">
+                <img src="images/roll2.jpg" alt="">
+                <h2>POCKET <br>BOREALIS</h2>
+            </div>
+
+            <div class="grids">
+                <img src="images/roll5.jpg" alt="">
+                <h2>THE <br>CURIOSITY</h2>
+            </div>
+
+            <div class="grids">
+                <img src="images/roll4.jpg" alt="">
+                <h2>MAKE IT <br>FISHEYE</h2>
+            </div>
+       </div>
+
+        <div class="last">
+            <a href="#"><button><p>SEE ALL</p></button></a>
+        </div>
     </main>
+
+    <footer>
+        <div class="nav-menu">
+            <div class="navs">
+                <h1>loopstudios</h1>
+
+                <div class="nav-menu1">
+                    <menu>
+                        <li>About</li>
+                        <li>Careers</li>
+                        <li>Events</li>
+                        <li>Products</li>
+                        <li>Support</li>
+                    </menu>
+                </div>
+            </div>
+
+            <div class="socials2">
+                <div class="socials">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+    
+                <div class="copyright">
+                    <p>
+                        <i class="fa-regular fa-copyright"></i> 2021 loopstudios. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
